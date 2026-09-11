@@ -1,0 +1,14 @@
+# Arquivos de compilação do Rust
+/target/
+
+# Arquivos de backup criados por ferramentas como cargo fix
+**/*.rs.bk
+
+# Editores e IDEs (opcional)
+.vscode/
+.idea/
+*.swp
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db

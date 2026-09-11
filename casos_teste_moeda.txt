@@ -1,0 +1,13 @@
+ADD moeda_salario BRL 2500.00
+OK
+GET moeda_salario
+R$ 2.500,00
+ADD moeda_fundo USD 10000.50
+OK
+GET moeda_fundo
+$ 10,000.50
+ADD moeda_invalida BRL -50.00
+ERRO: valor monetario deve ser um numero nao negativo
+ADD moeda_invalida2 BRL 10.1234
+ERRO: valor monetario pode ter no maximo 2 casas decimais
+EXIT

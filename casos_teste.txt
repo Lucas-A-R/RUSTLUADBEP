@@ -1,0 +1,21 @@
+ADD cpf_zezinho 12345678909
+OK
+GET cpf_zezinho
+123.456.789-09
+ADD cpf_repetido 11111111111
+ERRO: CPF invalido (digitos repetidos)
+ADD cpf_duplicado 12345678909
+ERRO: CPF ja cadastrado na chave cpf_zezinho
+ADD data_nascimento 2000-01-23
+OK
+GET data_nascimento
+23/01/2000
+ADD data_invalida 2023-02-29
+ERRO: dia invalido para o mes 02/2023 (maximo 28 dias)
+ADD data_bissexto 2000-02-29
+OK
+GET data_bissexto
+29/02/2000
+GET chave_inexistente
+ERRO: chave inexistente
+EXIT
